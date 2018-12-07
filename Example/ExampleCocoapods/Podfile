@@ -1,0 +1,18 @@
+######################################
+# Configuration
+######################################
+
+platform :ios,"12.0"
+source "https://github.com/CocoaPods/Specs.git"
+# use_frameworks!
+inhibit_all_warnings!
+
+######################################
+# Pods
+######################################
+
+target "ExampleCocoapods" do
+
+    pod 'CallStackParser', :git => 'https://github.com/gumob/CallStackParser.git', :branch => 'develop'
+
+end
