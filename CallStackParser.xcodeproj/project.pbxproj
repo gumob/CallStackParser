@@ -186,8 +186,8 @@
 		A7A7A97B21BA3DC00078304A /* Tests */ = {
 			isa = PBXGroup;
 			children = (
-				A7A7A97C21BA3DC00078304A /* CallStackParserTests.swift */,
 				A7A7A97E21BA3DC00078304A /* Info.plist */,
+				A7A7A97C21BA3DC00078304A /* CallStackParserTests.swift */,
 			);
 			path = Tests;
 			sourceTree = "<group>";
