@@ -32,9 +32,9 @@
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "A7A7A97621BA3DC00078304A"
-               BuildableName = "CallStackParserTests.xctest"
-               BlueprintName = "CallStackParserTests"
+               BlueprintIdentifier = "A7263B2B21BA6E73002A8B5F"
+               BuildableName = "CallStackParserTests-tvOS.xctest"
+               BlueprintName = "CallStackParserTests-tvOS"
                ReferencedContainer = "container:CallStackParser.xcodeproj">
             </BuildableReference>
          </TestableReference>

@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A7263B3121BA6E73002A8B5F /* CallStackParser.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A7A7A98D21BA3E250078304A /* CallStackParser.framework */; };
+		A7263B4021BA6E80002A8B5F /* CallStackParser.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A7A7A9A721BA3E5A0078304A /* CallStackParser.framework */; };
+		A7263B4621BA6EBE002A8B5F /* CallStackParserTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7A7A97C21BA3DC00078304A /* CallStackParserTests.swift */; };
+		A7263B4721BA6EBF002A8B5F /* CallStackParserTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7A7A97C21BA3DC00078304A /* CallStackParserTests.swift */; };
 		A7A7A97821BA3DC00078304A /* CallStackParser.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A7A7A96E21BA3DBF0078304A /* CallStackParser.framework */; };
 		A7A7A97D21BA3DC00078304A /* CallStackParserTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7A7A97C21BA3DC00078304A /* CallStackParserTests.swift */; };
 		A7A7A9B721BA3FF40078304A /* CwlDemangle.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7A7A9B221BA3FF30078304A /* CwlDemangle.swift */; };
@@ -40,6 +44,20 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		A7263B3221BA6E73002A8B5F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A7A7A96521BA3DBF0078304A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A7A7A98C21BA3E250078304A;
+			remoteInfo = "CallStackParser-tvOS";
+		};
+		A7263B4121BA6E80002A8B5F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A7A7A96521BA3DBF0078304A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A7A7A9A621BA3E5A0078304A;
+			remoteInfo = "CallStackParser-macOS";
+		};
 		A7A7A97921BA3DC00078304A /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = A7A7A96521BA3DBF0078304A /* Project object */;
@@ -50,10 +68,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		A7263B2C21BA6E73002A8B5F /* CallStackParserTests-tvOS.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "CallStackParserTests-tvOS.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A7263B3B21BA6E80002A8B5F /* CallStackParserTests-macOS.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "CallStackParserTests-macOS.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A7A7A96E21BA3DBF0078304A /* CallStackParser.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CallStackParser.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A7A7A97121BA3DC00078304A /* CallStackParser.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CallStackParser.h; sourceTree = "<group>"; };
 		A7A7A97221BA3DC00078304A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		A7A7A97721BA3DC00078304A /* CallStackParserTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CallStackParserTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A7A7A97721BA3DC00078304A /* CallStackParserTests-iOS.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "CallStackParserTests-iOS.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A7A7A97C21BA3DC00078304A /* CallStackParserTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CallStackParserTests.swift; sourceTree = "<group>"; };
 		A7A7A97E21BA3DC00078304A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A7A7A98D21BA3E250078304A /* CallStackParser.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CallStackParser.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -69,6 +89,22 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		A7263B2921BA6E73002A8B5F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A7263B3121BA6E73002A8B5F /* CallStackParser.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A7263B3821BA6E80002A8B5F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A7263B4021BA6E80002A8B5F /* CallStackParser.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		A7A7A96B21BA3DBF0078304A /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -121,10 +157,12 @@
 			isa = PBXGroup;
 			children = (
 				A7A7A96E21BA3DBF0078304A /* CallStackParser.framework */,
-				A7A7A97721BA3DC00078304A /* CallStackParserTests.xctest */,
+				A7A7A97721BA3DC00078304A /* CallStackParserTests-iOS.xctest */,
 				A7A7A98D21BA3E250078304A /* CallStackParser.framework */,
 				A7A7A99A21BA3E460078304A /* CallStackParser.framework */,
 				A7A7A9A721BA3E5A0078304A /* CallStackParser.framework */,
+				A7263B2C21BA6E73002A8B5F /* CallStackParserTests-tvOS.xctest */,
+				A7263B3B21BA6E80002A8B5F /* CallStackParserTests-macOS.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -188,6 +226,42 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
+		A7263B2B21BA6E73002A8B5F /* CallStackParserTests-tvOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A7263B3421BA6E73002A8B5F /* Build configuration list for PBXNativeTarget "CallStackParserTests-tvOS" */;
+			buildPhases = (
+				A7263B2821BA6E73002A8B5F /* Sources */,
+				A7263B2921BA6E73002A8B5F /* Frameworks */,
+				A7263B2A21BA6E73002A8B5F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A7263B3321BA6E73002A8B5F /* PBXTargetDependency */,
+			);
+			name = "CallStackParserTests-tvOS";
+			productName = "CallStackParserTests-tvOS";
+			productReference = A7263B2C21BA6E73002A8B5F /* CallStackParserTests-tvOS.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		A7263B3A21BA6E80002A8B5F /* CallStackParserTests-macOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A7263B4321BA6E80002A8B5F /* Build configuration list for PBXNativeTarget "CallStackParserTests-macOS" */;
+			buildPhases = (
+				A7263B3721BA6E80002A8B5F /* Sources */,
+				A7263B3821BA6E80002A8B5F /* Frameworks */,
+				A7263B3921BA6E80002A8B5F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A7263B4221BA6E80002A8B5F /* PBXTargetDependency */,
+			);
+			name = "CallStackParserTests-macOS";
+			productName = "CallStackParserTests-macOS";
+			productReference = A7263B3B21BA6E80002A8B5F /* CallStackParserTests-macOS.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		A7A7A96D21BA3DBF0078304A /* CallStackParser-iOS */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = A7A7A98221BA3DC00078304A /* Build configuration list for PBXNativeTarget "CallStackParser-iOS" */;
@@ -206,9 +280,9 @@
 			productReference = A7A7A96E21BA3DBF0078304A /* CallStackParser.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		A7A7A97621BA3DC00078304A /* CallStackParserTests */ = {
+		A7A7A97621BA3DC00078304A /* CallStackParserTests-iOS */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = A7A7A98521BA3DC00078304A /* Build configuration list for PBXNativeTarget "CallStackParserTests" */;
+			buildConfigurationList = A7A7A98521BA3DC00078304A /* Build configuration list for PBXNativeTarget "CallStackParserTests-iOS" */;
 			buildPhases = (
 				A7A7A97321BA3DC00078304A /* Sources */,
 				A7A7A97421BA3DC00078304A /* Frameworks */,
@@ -219,9 +293,9 @@
 			dependencies = (
 				A7A7A97A21BA3DC00078304A /* PBXTargetDependency */,
 			);
-			name = CallStackParserTests;
+			name = "CallStackParserTests-iOS";
 			productName = CallStackParserTests;
-			productReference = A7A7A97721BA3DC00078304A /* CallStackParserTests.xctest */;
+			productReference = A7A7A97721BA3DC00078304A /* CallStackParserTests-iOS.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 		A7A7A98C21BA3E250078304A /* CallStackParser-tvOS */ = {
@@ -288,6 +362,12 @@
 				LastUpgradeCheck = 1010;
 				ORGANIZATIONNAME = Gumob;
 				TargetAttributes = {
+					A7263B2B21BA6E73002A8B5F = {
+						CreatedOnToolsVersion = 10.1;
+					};
+					A7263B3A21BA6E80002A8B5F = {
+						CreatedOnToolsVersion = 10.1;
+					};
 					A7A7A96D21BA3DBF0078304A = {
 						CreatedOnToolsVersion = 10.1;
 						LastSwiftMigration = 1010;
@@ -325,12 +405,28 @@
 				A7A7A98C21BA3E250078304A /* CallStackParser-tvOS */,
 				A7A7A99921BA3E460078304A /* CallStackParser-watchOS */,
 				A7A7A9A621BA3E5A0078304A /* CallStackParser-macOS */,
-				A7A7A97621BA3DC00078304A /* CallStackParserTests */,
+				A7A7A97621BA3DC00078304A /* CallStackParserTests-iOS */,
+				A7263B2B21BA6E73002A8B5F /* CallStackParserTests-tvOS */,
+				A7263B3A21BA6E80002A8B5F /* CallStackParserTests-macOS */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		A7263B2A21BA6E73002A8B5F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A7263B3921BA6E80002A8B5F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		A7A7A96C21BA3DBF0078304A /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -369,6 +465,22 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		A7263B2821BA6E73002A8B5F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A7263B4621BA6EBE002A8B5F /* CallStackParserTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A7263B3721BA6E80002A8B5F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A7263B4721BA6EBF002A8B5F /* CallStackParserTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		A7A7A96A21BA3DBF0078304A /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -436,6 +548,16 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		A7263B3321BA6E73002A8B5F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A7A7A98C21BA3E250078304A /* CallStackParser-tvOS */;
+			targetProxy = A7263B3221BA6E73002A8B5F /* PBXContainerItemProxy */;
+		};
+		A7263B4221BA6E80002A8B5F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A7A7A9A621BA3E5A0078304A /* CallStackParser-macOS */;
+			targetProxy = A7263B4121BA6E80002A8B5F /* PBXContainerItemProxy */;
+		};
 		A7A7A97A21BA3DC00078304A /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = A7A7A96D21BA3DBF0078304A /* CallStackParser-iOS */;
@@ -444,6 +566,86 @@
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
+		A7263B3521BA6E73002A8B5F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Manual;
+				INFOPLIST_FILE = Tests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.gumob.CallStackParserTests-tvOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = appletvos;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 12.1;
+			};
+			name = Debug;
+		};
+		A7263B3621BA6E73002A8B5F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Manual;
+				INFOPLIST_FILE = Tests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.gumob.CallStackParserTests-tvOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = appletvos;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 12.1;
+			};
+			name = Release;
+		};
+		A7263B4421BA6E80002A8B5F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Manual;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = Tests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.gumob.CallStackParserTests-macOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_VERSION = 4.2;
+			};
+			name = Debug;
+		};
+		A7263B4521BA6E80002A8B5F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Manual;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = Tests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.gumob.CallStackParserTests-macOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_VERSION = 4.2;
+			};
+			name = Release;
+		};
 		A7A7A98021BA3DC00078304A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -576,7 +778,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = "";
@@ -605,7 +807,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = "";
@@ -633,7 +835,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = Tests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -641,7 +844,7 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.gumob.CallStackParserTests;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.gumob.CallStackParserTests-iOS";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -652,7 +855,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = Tests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -660,7 +864,7 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.gumob.CallStackParserTests;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.gumob.CallStackParserTests-iOS";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -671,7 +875,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = "";
@@ -702,7 +906,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = "";
@@ -733,7 +937,7 @@
 			buildSettings = {
 				APPLICATION_EXTENSION_API_ONLY = YES;
 				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = "";
@@ -765,7 +969,7 @@
 			buildSettings = {
 				APPLICATION_EXTENSION_API_ONLY = YES;
 				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = "";
@@ -795,7 +999,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_IDENTITY = "Mac Developer";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEFINES_MODULE = YES;
@@ -827,7 +1031,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_IDENTITY = "Mac Developer";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEFINES_MODULE = YES;
@@ -857,6 +1061,24 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		A7263B3421BA6E73002A8B5F /* Build configuration list for PBXNativeTarget "CallStackParserTests-tvOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A7263B3521BA6E73002A8B5F /* Debug */,
+				A7263B3621BA6E73002A8B5F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A7263B4321BA6E80002A8B5F /* Build configuration list for PBXNativeTarget "CallStackParserTests-macOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A7263B4421BA6E80002A8B5F /* Debug */,
+				A7263B4521BA6E80002A8B5F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		A7A7A96821BA3DBF0078304A /* Build configuration list for PBXProject "CallStackParser" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -875,7 +1097,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		A7A7A98521BA3DC00078304A /* Build configuration list for PBXNativeTarget "CallStackParserTests" */ = {
+		A7A7A98521BA3DC00078304A /* Build configuration list for PBXNativeTarget "CallStackParserTests-iOS" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				A7A7A98621BA3DC00078304A /* Debug */,
