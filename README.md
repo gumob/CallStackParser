@@ -40,22 +40,32 @@ pod 'CallStackParser'
 
 ## Usage
 
-Read the [API reference](https://gumob.github.io/CallStackParser/Classes/CallStackParser.html) for detailed information.
-
-### Synchronous and asynchronous request
-
-Get the size of an image synchronously:
+Print simplified call stack symbols:
 ```swift
 import CallStackParser
 
+class ViewController: UIViewController {
+
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        foo()
+    }
+
+    func foo() {
+        bar()
+    }
+
+    func bar() {
+        print(Thread.simpleCallStackString)
+        // [CallStack:3/3] ViewController                       bar()
+        // [CallStack:2/3] ViewController                       foo()
+        // [CallStack:1/3] ViewController                       viewDidLoad()
+    }
+
+}
 ```
 
-Get the size of an image asynchronously:
-```swift
-import CallStackParser
-
-
-```
+Read the [API reference](https://gumob.github.io/CallStackParser/Classes/CallStackParser.html), or check [example projects](https://github.com/gumob/CallStackParser/tree/develop/Example) for detailed information.
 
 ## Copyright
 
