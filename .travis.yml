@@ -52,7 +52,8 @@ matrix:
     - os: osx
       language: objective-c
       osx_image: xcode10.1
-      env: PROJ="CallStackParser.xcodeproj" DESTINATION="OS=9.2,name=Apple TV 1080p" SCHEME="$TVOS_SCHEME" RUN_TESTS="YES" LINT="NO" COVERAGE="NO" CODECOV_FLAG="tvos9"
+      env: DESTINATION="OS=9.2,name=Apple TV 1080p" SCHEME="$TVOS_SCHEME" RUN_TESTS="YES" LINT="NO" COVERAGE="NO" CODECOV_FLAG="tvos9"
+#      env: PROJ="CallStackParser.xcodeproj" DESTINATION="OS=9.2,name=Apple TV 1080p" SCHEME="$TVOS_SCHEME" RUN_TESTS="YES" LINT="NO" COVERAGE="NO" CODECOV_FLAG="tvos9"
 
     # macOS Tests
     - os: osx
