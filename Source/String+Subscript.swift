@@ -7,7 +7,7 @@
 
 import Foundation
 
-extension String {
+internal extension String {
     
     subscript (i: Int) -> Character {
         return self[index(startIndex, offsetBy: i)]
@@ -43,7 +43,7 @@ extension String {
     
 }
 
-extension Substring {
+internal extension Substring {
     
     subscript (i: Int) -> Character {
         return self[index(startIndex, offsetBy: i)]

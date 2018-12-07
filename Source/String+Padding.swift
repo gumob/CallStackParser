@@ -8,7 +8,7 @@
 
 import Foundation
 
-extension String {
+internal extension String {
     func leftPadding(toLength: Int, withPad: String = " ") -> String {
         guard toLength > self.count else { return self }
         let padding: String = String(repeating: withPad, count: toLength - self.count)

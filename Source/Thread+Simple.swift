@@ -9,6 +9,9 @@
 import Foundation
 
 public extension Thread {
+    /**
+     An array of string containing parsed class names and method names
+     */
     class var simpleCallStackSymbols: [String] {
         guard let bundleName: String = CallStackParser.bundleName else { return [] }
         let symbols: [String] = Thread.callStackSymbols
@@ -42,6 +45,9 @@ public extension Thread {
                 .reversed()
     }
 
+    /**
+     A formatted string containing parsed class names and method names
+     */
     class var simpleCallStackString: String {
         return simpleCallStackSymbols.joined(separator: "\n")
     }

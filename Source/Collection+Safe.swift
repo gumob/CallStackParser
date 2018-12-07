@@ -8,10 +8,8 @@
 
 import Foundation
 
-extension Collection {
+internal extension Collection {
     subscript(safe index: Index) -> Element? {
         return indices.contains(index) ? self[index] : nil
     }
 }
-
-import Foundation

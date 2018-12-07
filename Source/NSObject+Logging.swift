@@ -8,7 +8,7 @@
 
 import Foundation
 
-extension NSObject {
+internal extension NSObject {
 
     var typenameFull: String {
         return String(describing: type(of: self))
@@ -30,4 +30,3 @@ extension NSObject {
     }
 
 }
-
