@@ -7,6 +7,8 @@
 
 # CallStackParser
 A swift library to parse call stack symbol supporting iOS, tvOS, watchOS, and macOS.
+Most of all source codes are ported from [GDXRepo/CallStackParser](https://github.com/GDXRepo/CallStackParser).
+The version on this repository is added multiple platform support, support for Carthage and Cocoapods.
 
 ## Requirements
 
