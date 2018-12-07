@@ -31,11 +31,41 @@ Set version number
 fastlane ios bump_version
 ```
 Bump version number
-### ios tests
+### ios create_doc
 ```
-fastlane ios tests
+fastlane ios create_doc
 ```
-Run Tests
+Create documentation
+### ios test_all
+```
+fastlane ios test_all
+```
+Run All Tests
+### ios test_ios
+```
+fastlane ios test_ios
+```
+Run iOS Tests
+### ios test_tvos
+```
+fastlane ios test_tvos
+```
+Run tvOS Tests
+### ios test_macos
+```
+fastlane ios test_macos
+```
+Run macOS Tests
+### ios coverage
+```
+fastlane ios coverage
+```
+Run Coverage
+### ios lint
+```
+fastlane ios lint
+```
+Run Swiftlint
 ### ios build_carthage
 ```
 fastlane ios build_carthage

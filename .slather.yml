@@ -1,0 +1,11 @@
+coverage_service: cobertura_xml
+xcodeproj: CallStackParser.xcodeproj
+scheme: CallStackParser-iOS
+source_directory: Source/
+output_directory: Reports/coverage
+ignore:
+  - Carthage/*
+  - Pods/*
+  - Module/*
+  - Submodule/*
+  - Tests/*

@@ -1,0 +1,39 @@
+module: CallStackParser
+
+author: Gumob
+author_url: http://gumob.com
+github_url: https://github.com/gumob/CallStackParser
+copyright: 'Copyright © 2018 Gumob. All rights reserved.'
+
+min_acl: public
+clean: true
+readme: "README.md"
+output: "docs"
+skip_undocumented: true
+hide_documentation_coverage: true
+theme: "themes/fullwidth-ex"
+
+source_directory: Source
+umbrella_header: "Source/CallStackParser.h"
+xcodebuild_arguments:
+  - -project
+  - ../CallStackParser.xcodeproj
+  - -scheme
+  - CallStackParser-iOS
+#include:
+#  - Source/CallStackParser.swift
+#  - Source/Thread+Simple.swift
+#exclude:
+#  - Source/Collection+Safe.swift
+#  - Source/CwlDemangle.swift
+#  - Source/NSObject+Logging.swift
+#  - Source/String+Padding.swift
+#  - Source/String+Subscript.swift
+#custom_categories:
+#  - name: Classe
+#    children:
+#      - CallStackParser
+#  - name: Extensions
+#    children:
+#      - CallStackParser
+#      - Thread+Simple

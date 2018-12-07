@@ -86,51 +86,76 @@ platform :ios do
     end
 
     ##########################################
+    # Appledoc
+    ##########################################
+    desc "Create documentation"
+    lane :create_doc do |options|
+        jazzy(config: ".jazzy.yml")
+    end
+
+    ##########################################
     # Test
     ##########################################
 
-    desc "Run Tests"
-    lane :tests do
+    desc "Run All Tests"
+    lane :test_all do |options|
+        test_macos
+        test_tvos
+        test_ios
+    end
+
+    desc "Run iOS Tests"
+    lane :test_ios do |options|
         xcclean
         scan(
             scheme: scheme_iOS,
-            devices: ["iPhone X"],
-#             clean: true,
+            devices: [
+#             "iPhone X",
+            "iPhone 6 (10.3.1)",
+            ],
             code_coverage: true
         )
-#         slather(
-#             scheme: scheme_iOS,
-#             proj: default_xcodeproj,
-#             output_directory: "./reports/iOS",
-#             html: true,
-#             show: true
-#         )
-        scan(
-            scheme: scheme_macOS,
-            destination: "platform=macOS",
-#             clean: true,
-            code_coverage: true
-        )
-#         slather(
-#             scheme: scheme_macOS,
-#             proj: default_xcodeproj,
-#             output_directory: "./reports/macOS",
-#             html: true,
-#             show: true
-#         )
+        coverage
+        lint
+        create_doc
+    end
+
+    desc "Run tvOS Tests"
+    lane :test_tvos do |options|
+        xcclean
         scan(
             scheme: scheme_tvOS,
             devices: ["Apple TV"],
-#             clean: true,
             code_coverage: true
         )
-#         slather(
-#             scheme: scheme_tvOS,
-#             proj: default_xcodeproj,
-#             output_directory: "./reports/tvOS",
-#             html: true,
-#             show: true
-#         )
+    end
+
+    desc "Run macOS Tests"
+    lane :test_macos do |options|
+        xcclean
+        scan(
+            scheme: scheme_macOS,
+            destination: "platform=macOS",
+            code_coverage: true
+        )
+    end
+
+    desc "Run Coverage"
+    lane :coverage do |options|
+        slather(
+            html: true,
+            verbose: true,
+        )
+    end
+
+    desc "Run Swiftlint"
+    lane :lint do |options|
+        swiftlint(
+            mode: :lint,
+            path: "Source/",
+            config_file: ".swiftlint.yml",
+            ignore_exit_status: true
+        )
     end
 
     ##########################################
