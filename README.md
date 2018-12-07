@@ -40,7 +40,7 @@ pod 'CallStackParser'
 
 ## Usage
 
-Read the [usage](https://gumob.github.io/CallStackParser/usage.html) and the [API reference](https://gumob.github.io/CallStackParser/Classes/CallStackParser.html) for detailed information.
+Read the [API reference](https://gumob.github.io/CallStackParser/Classes/CallStackParser.html) for detailed information.
 
 ### Synchronous and asynchronous request
 
