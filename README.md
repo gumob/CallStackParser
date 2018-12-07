@@ -32,9 +32,6 @@ github "gumob/CallStackParser"
 To integrate CallStackParser into your project, add the following to your `Podfile`.
 
 ```ruby
-platform :ios, '9.3'
-use_frameworks!
-
 pod 'CallStackParser'
 ```
 
