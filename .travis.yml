@@ -1,8 +1,8 @@
 branches:
   only:
-    - master
+#    - master
     - develop
-    - "/^v?[0-9\\.]+/"
+#    - "/^v?[0-9\\.]+/"
 
 cache:
   directories:
