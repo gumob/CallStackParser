@@ -9,7 +9,30 @@
 /* Begin PBXBuildFile section */
 		A7A7A97821BA3DC00078304A /* CallStackParser.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A7A7A96E21BA3DBF0078304A /* CallStackParser.framework */; };
 		A7A7A97D21BA3DC00078304A /* CallStackParserTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7A7A97C21BA3DC00078304A /* CallStackParserTests.swift */; };
-		A7A7A97F21BA3DC00078304A /* CallStackParser.h in Headers */ = {isa = PBXBuildFile; fileRef = A7A7A97121BA3DC00078304A /* CallStackParser.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A7A7A9B721BA3FF40078304A /* CwlDemangle.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7A7A9B221BA3FF30078304A /* CwlDemangle.swift */; };
+		A7A7A9B821BA3FF40078304A /* CwlDemangle.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7A7A9B221BA3FF30078304A /* CwlDemangle.swift */; };
+		A7A7A9B921BA3FF40078304A /* CwlDemangle.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7A7A9B221BA3FF30078304A /* CwlDemangle.swift */; };
+		A7A7A9BA21BA3FF40078304A /* CwlDemangle.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7A7A9B221BA3FF30078304A /* CwlDemangle.swift */; };
+		A7A7A9BB21BA3FF40078304A /* Thread+Simple.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7A7A9B321BA3FF30078304A /* Thread+Simple.swift */; };
+		A7A7A9BC21BA3FF40078304A /* Thread+Simple.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7A7A9B321BA3FF30078304A /* Thread+Simple.swift */; };
+		A7A7A9BD21BA3FF40078304A /* Thread+Simple.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7A7A9B321BA3FF30078304A /* Thread+Simple.swift */; };
+		A7A7A9BE21BA3FF40078304A /* Thread+Simple.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7A7A9B321BA3FF30078304A /* Thread+Simple.swift */; };
+		A7A7A9BF21BA3FF40078304A /* String+Subscript.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7A7A9B421BA3FF40078304A /* String+Subscript.swift */; };
+		A7A7A9C021BA3FF40078304A /* String+Subscript.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7A7A9B421BA3FF40078304A /* String+Subscript.swift */; };
+		A7A7A9C121BA3FF40078304A /* String+Subscript.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7A7A9B421BA3FF40078304A /* String+Subscript.swift */; };
+		A7A7A9C221BA3FF40078304A /* String+Subscript.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7A7A9B421BA3FF40078304A /* String+Subscript.swift */; };
+		A7A7A9C321BA3FF40078304A /* NSObject+Logging.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7A7A9B521BA3FF40078304A /* NSObject+Logging.swift */; };
+		A7A7A9C421BA3FF40078304A /* NSObject+Logging.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7A7A9B521BA3FF40078304A /* NSObject+Logging.swift */; };
+		A7A7A9C521BA3FF40078304A /* NSObject+Logging.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7A7A9B521BA3FF40078304A /* NSObject+Logging.swift */; };
+		A7A7A9C621BA3FF40078304A /* NSObject+Logging.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7A7A9B521BA3FF40078304A /* NSObject+Logging.swift */; };
+		A7A7A9C721BA3FF40078304A /* CallStackParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7A7A9B621BA3FF40078304A /* CallStackParser.swift */; };
+		A7A7A9C821BA3FF40078304A /* CallStackParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7A7A9B621BA3FF40078304A /* CallStackParser.swift */; };
+		A7A7A9C921BA3FF40078304A /* CallStackParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7A7A9B621BA3FF40078304A /* CallStackParser.swift */; };
+		A7A7A9CA21BA3FF40078304A /* CallStackParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7A7A9B621BA3FF40078304A /* CallStackParser.swift */; };
+		A7A7A9CC21BA40280078304A /* Collection+Safe.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7A7A9CB21BA40280078304A /* Collection+Safe.swift */; };
+		A7A7A9CD21BA40280078304A /* Collection+Safe.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7A7A9CB21BA40280078304A /* Collection+Safe.swift */; };
+		A7A7A9CE21BA40280078304A /* Collection+Safe.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7A7A9CB21BA40280078304A /* Collection+Safe.swift */; };
+		A7A7A9CF21BA40280078304A /* Collection+Safe.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7A7A9CB21BA40280078304A /* Collection+Safe.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +52,15 @@
 		A7A7A97721BA3DC00078304A /* CallStackParserTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CallStackParserTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A7A7A97C21BA3DC00078304A /* CallStackParserTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CallStackParserTests.swift; sourceTree = "<group>"; };
 		A7A7A97E21BA3DC00078304A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A7A7A98D21BA3E250078304A /* CallStackParser.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CallStackParser.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A7A7A99A21BA3E460078304A /* CallStackParser.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CallStackParser.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A7A7A9A721BA3E5A0078304A /* CallStackParser.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CallStackParser.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A7A7A9B221BA3FF30078304A /* CwlDemangle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CwlDemangle.swift; sourceTree = "<group>"; };
+		A7A7A9B321BA3FF30078304A /* Thread+Simple.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Thread+Simple.swift"; sourceTree = "<group>"; };
+		A7A7A9B421BA3FF40078304A /* String+Subscript.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+Subscript.swift"; sourceTree = "<group>"; };
+		A7A7A9B521BA3FF40078304A /* NSObject+Logging.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSObject+Logging.swift"; sourceTree = "<group>"; };
+		A7A7A9B621BA3FF40078304A /* CallStackParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CallStackParser.swift; sourceTree = "<group>"; };
+		A7A7A9CB21BA40280078304A /* Collection+Safe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Collection+Safe.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,14 +79,35 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		A7A7A98A21BA3E250078304A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A7A7A99721BA3E460078304A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A7A7A9A421BA3E5A0078304A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
 		A7A7A96421BA3DBF0078304A = {
 			isa = PBXGroup;
 			children = (
-				A7A7A97021BA3DBF0078304A /* CallStackParser */,
-				A7A7A97B21BA3DC00078304A /* CallStackParserTests */,
+				A7A7A97021BA3DBF0078304A /* Source */,
+				A7A7A97B21BA3DC00078304A /* Tests */,
 				A7A7A96F21BA3DBF0078304A /* Products */,
 			);
 			sourceTree = "<group>";
@@ -64,26 +117,35 @@
 			children = (
 				A7A7A96E21BA3DBF0078304A /* CallStackParser.framework */,
 				A7A7A97721BA3DC00078304A /* CallStackParserTests.xctest */,
+				A7A7A98D21BA3E250078304A /* CallStackParser.framework */,
+				A7A7A99A21BA3E460078304A /* CallStackParser.framework */,
+				A7A7A9A721BA3E5A0078304A /* CallStackParser.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		A7A7A97021BA3DBF0078304A /* CallStackParser */ = {
+		A7A7A97021BA3DBF0078304A /* Source */ = {
 			isa = PBXGroup;
 			children = (
-				A7A7A97121BA3DC00078304A /* CallStackParser.h */,
 				A7A7A97221BA3DC00078304A /* Info.plist */,
+				A7A7A97121BA3DC00078304A /* CallStackParser.h */,
+				A7A7A9B621BA3FF40078304A /* CallStackParser.swift */,
+				A7A7A9B221BA3FF30078304A /* CwlDemangle.swift */,
+				A7A7A9B521BA3FF40078304A /* NSObject+Logging.swift */,
+				A7A7A9B421BA3FF40078304A /* String+Subscript.swift */,
+				A7A7A9B321BA3FF30078304A /* Thread+Simple.swift */,
+				A7A7A9CB21BA40280078304A /* Collection+Safe.swift */,
 			);
-			path = CallStackParser;
+			path = Source;
 			sourceTree = "<group>";
 		};
-		A7A7A97B21BA3DC00078304A /* CallStackParserTests */ = {
+		A7A7A97B21BA3DC00078304A /* Tests */ = {
 			isa = PBXGroup;
 			children = (
 				A7A7A97C21BA3DC00078304A /* CallStackParserTests.swift */,
 				A7A7A97E21BA3DC00078304A /* Info.plist */,
 			);
-			path = CallStackParserTests;
+			path = Tests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -93,16 +155,36 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A7A7A97F21BA3DC00078304A /* CallStackParser.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A7A7A98821BA3E250078304A /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A7A7A99521BA3E460078304A /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A7A7A9A221BA3E5A0078304A /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		A7A7A96D21BA3DBF0078304A /* CallStackParser */ = {
+		A7A7A96D21BA3DBF0078304A /* CallStackParser-iOS */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = A7A7A98221BA3DC00078304A /* Build configuration list for PBXNativeTarget "CallStackParser" */;
+			buildConfigurationList = A7A7A98221BA3DC00078304A /* Build configuration list for PBXNativeTarget "CallStackParser-iOS" */;
 			buildPhases = (
 				A7A7A96921BA3DBF0078304A /* Headers */,
 				A7A7A96A21BA3DBF0078304A /* Sources */,
@@ -113,7 +195,7 @@
 			);
 			dependencies = (
 			);
-			name = CallStackParser;
+			name = "CallStackParser-iOS";
 			productName = CallStackParser;
 			productReference = A7A7A96E21BA3DBF0078304A /* CallStackParser.framework */;
 			productType = "com.apple.product-type.framework";
@@ -136,6 +218,60 @@
 			productReference = A7A7A97721BA3DC00078304A /* CallStackParserTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
+		A7A7A98C21BA3E250078304A /* CallStackParser-tvOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A7A7A99221BA3E260078304A /* Build configuration list for PBXNativeTarget "CallStackParser-tvOS" */;
+			buildPhases = (
+				A7A7A98821BA3E250078304A /* Headers */,
+				A7A7A98921BA3E250078304A /* Sources */,
+				A7A7A98A21BA3E250078304A /* Frameworks */,
+				A7A7A98B21BA3E250078304A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "CallStackParser-tvOS";
+			productName = "CallStackParser-tvOS";
+			productReference = A7A7A98D21BA3E250078304A /* CallStackParser.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		A7A7A99921BA3E460078304A /* CallStackParser-watchOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A7A7A99F21BA3E470078304A /* Build configuration list for PBXNativeTarget "CallStackParser-watchOS" */;
+			buildPhases = (
+				A7A7A99521BA3E460078304A /* Headers */,
+				A7A7A99621BA3E460078304A /* Sources */,
+				A7A7A99721BA3E460078304A /* Frameworks */,
+				A7A7A99821BA3E460078304A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "CallStackParser-watchOS";
+			productName = "CallStackParser-watchOS";
+			productReference = A7A7A99A21BA3E460078304A /* CallStackParser.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		A7A7A9A621BA3E5A0078304A /* CallStackParser-macOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A7A7A9AC21BA3E5A0078304A /* Build configuration list for PBXNativeTarget "CallStackParser-macOS" */;
+			buildPhases = (
+				A7A7A9A221BA3E5A0078304A /* Headers */,
+				A7A7A9A321BA3E5A0078304A /* Sources */,
+				A7A7A9A421BA3E5A0078304A /* Frameworks */,
+				A7A7A9A521BA3E5A0078304A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "CallStackParser-macOS";
+			productName = "CallStackParser-macOS";
+			productReference = A7A7A9A721BA3E5A0078304A /* CallStackParser.framework */;
+			productType = "com.apple.product-type.framework";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -148,9 +284,22 @@
 				TargetAttributes = {
 					A7A7A96D21BA3DBF0078304A = {
 						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1010;
 					};
 					A7A7A97621BA3DC00078304A = {
 						CreatedOnToolsVersion = 10.1;
+					};
+					A7A7A98C21BA3E250078304A = {
+						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1010;
+					};
+					A7A7A99921BA3E460078304A = {
+						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1010;
+					};
+					A7A7A9A621BA3E5A0078304A = {
+						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1010;
 					};
 				};
 			};
@@ -166,7 +315,10 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				A7A7A96D21BA3DBF0078304A /* CallStackParser */,
+				A7A7A96D21BA3DBF0078304A /* CallStackParser-iOS */,
+				A7A7A98C21BA3E250078304A /* CallStackParser-tvOS */,
+				A7A7A99921BA3E460078304A /* CallStackParser-watchOS */,
+				A7A7A9A621BA3E5A0078304A /* CallStackParser-macOS */,
 				A7A7A97621BA3DC00078304A /* CallStackParserTests */,
 			);
 		};
@@ -187,6 +339,27 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		A7A7A98B21BA3E250078304A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A7A7A99821BA3E460078304A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A7A7A9A521BA3E5A0078304A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -194,6 +367,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A7A7A9CC21BA40280078304A /* Collection+Safe.swift in Sources */,
+				A7A7A9C721BA3FF40078304A /* CallStackParser.swift in Sources */,
+				A7A7A9B721BA3FF40078304A /* CwlDemangle.swift in Sources */,
+				A7A7A9BF21BA3FF40078304A /* String+Subscript.swift in Sources */,
+				A7A7A9BB21BA3FF40078304A /* Thread+Simple.swift in Sources */,
+				A7A7A9C321BA3FF40078304A /* NSObject+Logging.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -205,12 +384,51 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		A7A7A98921BA3E250078304A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A7A7A9CD21BA40280078304A /* Collection+Safe.swift in Sources */,
+				A7A7A9C821BA3FF40078304A /* CallStackParser.swift in Sources */,
+				A7A7A9B821BA3FF40078304A /* CwlDemangle.swift in Sources */,
+				A7A7A9C021BA3FF40078304A /* String+Subscript.swift in Sources */,
+				A7A7A9BC21BA3FF40078304A /* Thread+Simple.swift in Sources */,
+				A7A7A9C421BA3FF40078304A /* NSObject+Logging.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A7A7A99621BA3E460078304A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A7A7A9CE21BA40280078304A /* Collection+Safe.swift in Sources */,
+				A7A7A9C921BA3FF40078304A /* CallStackParser.swift in Sources */,
+				A7A7A9B921BA3FF40078304A /* CwlDemangle.swift in Sources */,
+				A7A7A9C121BA3FF40078304A /* String+Subscript.swift in Sources */,
+				A7A7A9BD21BA3FF40078304A /* Thread+Simple.swift in Sources */,
+				A7A7A9C521BA3FF40078304A /* NSObject+Logging.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A7A7A9A321BA3E5A0078304A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A7A7A9CF21BA40280078304A /* Collection+Safe.swift in Sources */,
+				A7A7A9CA21BA3FF40078304A /* CallStackParser.swift in Sources */,
+				A7A7A9BA21BA3FF40078304A /* CwlDemangle.swift in Sources */,
+				A7A7A9C221BA3FF40078304A /* String+Subscript.swift in Sources */,
+				A7A7A9BE21BA3FF40078304A /* Thread+Simple.swift in Sources */,
+				A7A7A9C621BA3FF40078304A /* NSObject+Logging.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
 		A7A7A97A21BA3DC00078304A /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = A7A7A96D21BA3DBF0078304A /* CallStackParser */;
+			target = A7A7A96D21BA3DBF0078304A /* CallStackParser-iOS */;
 			targetProxy = A7A7A97921BA3DC00078304A /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -248,7 +466,7 @@
 				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "";
 				COPY_PHASE_STRIP = NO;
 				CURRENT_PROJECT_VERSION = 1;
 				DEBUG_INFORMATION_FORMAT = dwarf;
@@ -268,15 +486,18 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TVOS_DEPLOYMENT_TARGET = 9.0;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
 			};
 			name = Debug;
 		};
@@ -312,7 +533,7 @@
 				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "";
 				COPY_PHASE_STRIP = NO;
 				CURRENT_PROJECT_VERSION = 1;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
@@ -326,38 +547,45 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				TVOS_DEPLOYMENT_TARGET = 9.0;
 				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
 			};
 			name = Release;
 		};
 		A7A7A98321BA3DC00078304A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
-				DEVELOPMENT_TEAM = 767KBW5V62;
+				DEVELOPMENT_TEAM = "";
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = CallStackParser/Info.plist;
+				HEADER_SEARCH_PATHS = "";
+				INFOPLIST_FILE = Source/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.gumob.CallStackParser;
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.gumob.CallStackParser-iOS";
+				PRODUCT_NAME = CallStackParser;
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -366,22 +594,25 @@
 		A7A7A98421BA3DC00078304A /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
-				DEVELOPMENT_TEAM = 767KBW5V62;
+				DEVELOPMENT_TEAM = "";
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = CallStackParser/Info.plist;
+				HEADER_SEARCH_PATHS = "";
+				INFOPLIST_FILE = Source/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.gumob.CallStackParser;
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.gumob.CallStackParser-iOS";
+				PRODUCT_NAME = CallStackParser;
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -391,9 +622,10 @@
 		A7A7A98621BA3DC00078304A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 767KBW5V62;
-				INFOPLIST_FILE = CallStackParserTests/Info.plist;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = Tests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -409,9 +641,10 @@
 		A7A7A98721BA3DC00078304A /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 767KBW5V62;
-				INFOPLIST_FILE = CallStackParserTests/Info.plist;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = Tests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -421,6 +654,193 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		A7A7A99321BA3E260078304A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = "";
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				HEADER_SEARCH_PATHS = "";
+				INFOPLIST_FILE = Source/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.gumob.CallStackParser-tvOS";
+				PRODUCT_NAME = CallStackParser;
+				SDKROOT = appletvos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 9.0;
+			};
+			name = Debug;
+		};
+		A7A7A99421BA3E260078304A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = "";
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				HEADER_SEARCH_PATHS = "";
+				INFOPLIST_FILE = Source/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.gumob.CallStackParser-tvOS";
+				PRODUCT_NAME = CallStackParser;
+				SDKROOT = appletvos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 9.0;
+			};
+			name = Release;
+		};
+		A7A7A9A021BA3E470078304A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = "";
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				HEADER_SEARCH_PATHS = "";
+				INFOPLIST_FILE = Source/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.gumob.CallStackParser-watchOS";
+				PRODUCT_NAME = CallStackParser;
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Debug;
+		};
+		A7A7A9A121BA3E470078304A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = "";
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				HEADER_SEARCH_PATHS = "";
+				INFOPLIST_FILE = Source/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.gumob.CallStackParser-watchOS";
+				PRODUCT_NAME = CallStackParser;
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Release;
+		};
+		A7A7A9AD21BA3E5A0078304A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = "";
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_VERSION = A;
+				HEADER_SEARCH_PATHS = "";
+				INFOPLIST_FILE = Source/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.gumob.CallStackParser-macOS";
+				PRODUCT_NAME = CallStackParser;
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.2;
+			};
+			name = Debug;
+		};
+		A7A7A9AE21BA3E5A0078304A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = "";
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_VERSION = A;
+				HEADER_SEARCH_PATHS = "";
+				INFOPLIST_FILE = Source/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.gumob.CallStackParser-macOS";
+				PRODUCT_NAME = CallStackParser;
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
 			};
 			name = Release;
 		};
@@ -436,7 +856,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		A7A7A98221BA3DC00078304A /* Build configuration list for PBXNativeTarget "CallStackParser" */ = {
+		A7A7A98221BA3DC00078304A /* Build configuration list for PBXNativeTarget "CallStackParser-iOS" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				A7A7A98321BA3DC00078304A /* Debug */,
@@ -450,6 +870,33 @@
 			buildConfigurations = (
 				A7A7A98621BA3DC00078304A /* Debug */,
 				A7A7A98721BA3DC00078304A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A7A7A99221BA3E260078304A /* Build configuration list for PBXNativeTarget "CallStackParser-tvOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A7A7A99321BA3E260078304A /* Debug */,
+				A7A7A99421BA3E260078304A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A7A7A99F21BA3E470078304A /* Build configuration list for PBXNativeTarget "CallStackParser-watchOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A7A7A9A021BA3E470078304A /* Debug */,
+				A7A7A9A121BA3E470078304A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A7A7A9AC21BA3E5A0078304A /* Build configuration list for PBXNativeTarget "CallStackParser-macOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A7A7A9AD21BA3E5A0078304A /* Debug */,
+				A7A7A9AE21BA3E5A0078304A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
