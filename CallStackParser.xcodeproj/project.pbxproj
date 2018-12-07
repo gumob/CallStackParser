@@ -33,6 +33,10 @@
 		A7A7A9CD21BA40280078304A /* Collection+Safe.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7A7A9CB21BA40280078304A /* Collection+Safe.swift */; };
 		A7A7A9CE21BA40280078304A /* Collection+Safe.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7A7A9CB21BA40280078304A /* Collection+Safe.swift */; };
 		A7A7A9CF21BA40280078304A /* Collection+Safe.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7A7A9CB21BA40280078304A /* Collection+Safe.swift */; };
+		A7A7A9D121BA57730078304A /* String+Padding.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7A7A9D021BA57730078304A /* String+Padding.swift */; };
+		A7A7A9D221BA57730078304A /* String+Padding.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7A7A9D021BA57730078304A /* String+Padding.swift */; };
+		A7A7A9D321BA57730078304A /* String+Padding.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7A7A9D021BA57730078304A /* String+Padding.swift */; };
+		A7A7A9D421BA57730078304A /* String+Padding.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7A7A9D021BA57730078304A /* String+Padding.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,6 +65,7 @@
 		A7A7A9B521BA3FF40078304A /* NSObject+Logging.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSObject+Logging.swift"; sourceTree = "<group>"; };
 		A7A7A9B621BA3FF40078304A /* CallStackParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CallStackParser.swift; sourceTree = "<group>"; };
 		A7A7A9CB21BA40280078304A /* Collection+Safe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Collection+Safe.swift"; sourceTree = "<group>"; };
+		A7A7A9D021BA57730078304A /* String+Padding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Padding.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -130,11 +135,12 @@
 				A7A7A97221BA3DC00078304A /* Info.plist */,
 				A7A7A97121BA3DC00078304A /* CallStackParser.h */,
 				A7A7A9B621BA3FF40078304A /* CallStackParser.swift */,
+				A7A7A9CB21BA40280078304A /* Collection+Safe.swift */,
 				A7A7A9B221BA3FF30078304A /* CwlDemangle.swift */,
 				A7A7A9B521BA3FF40078304A /* NSObject+Logging.swift */,
+				A7A7A9D021BA57730078304A /* String+Padding.swift */,
 				A7A7A9B421BA3FF40078304A /* String+Subscript.swift */,
 				A7A7A9B321BA3FF30078304A /* Thread+Simple.swift */,
-				A7A7A9CB21BA40280078304A /* Collection+Safe.swift */,
 			);
 			path = Source;
 			sourceTree = "<group>";
@@ -372,6 +378,7 @@
 				A7A7A9B721BA3FF40078304A /* CwlDemangle.swift in Sources */,
 				A7A7A9BF21BA3FF40078304A /* String+Subscript.swift in Sources */,
 				A7A7A9BB21BA3FF40078304A /* Thread+Simple.swift in Sources */,
+				A7A7A9D121BA57730078304A /* String+Padding.swift in Sources */,
 				A7A7A9C321BA3FF40078304A /* NSObject+Logging.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -393,6 +400,7 @@
 				A7A7A9B821BA3FF40078304A /* CwlDemangle.swift in Sources */,
 				A7A7A9C021BA3FF40078304A /* String+Subscript.swift in Sources */,
 				A7A7A9BC21BA3FF40078304A /* Thread+Simple.swift in Sources */,
+				A7A7A9D221BA57730078304A /* String+Padding.swift in Sources */,
 				A7A7A9C421BA3FF40078304A /* NSObject+Logging.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -406,6 +414,7 @@
 				A7A7A9B921BA3FF40078304A /* CwlDemangle.swift in Sources */,
 				A7A7A9C121BA3FF40078304A /* String+Subscript.swift in Sources */,
 				A7A7A9BD21BA3FF40078304A /* Thread+Simple.swift in Sources */,
+				A7A7A9D321BA57730078304A /* String+Padding.swift in Sources */,
 				A7A7A9C521BA3FF40078304A /* NSObject+Logging.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -419,6 +428,7 @@
 				A7A7A9BA21BA3FF40078304A /* CwlDemangle.swift in Sources */,
 				A7A7A9C221BA3FF40078304A /* String+Subscript.swift in Sources */,
 				A7A7A9BE21BA3FF40078304A /* Thread+Simple.swift in Sources */,
+				A7A7A9D421BA57730078304A /* String+Padding.swift in Sources */,
 				A7A7A9C621BA3FF40078304A /* NSObject+Logging.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
