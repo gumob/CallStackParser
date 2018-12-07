@@ -1,0 +1,6 @@
+module CallStackParser {
+  umbrella header "CallStackParser-umbrella.h"
+
+  export *
+  module * { export * }
+}

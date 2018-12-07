@@ -1,0 +1,22 @@
+PODS:
+  - CallStackParser (1.0.0)
+
+DEPENDENCIES:
+  - CallStackParser (from `https://github.com/gumob/CallStackParser.git`, branch `develop`)
+
+EXTERNAL SOURCES:
+  CallStackParser:
+    :branch: develop
+    :git: https://github.com/gumob/CallStackParser.git
+
+CHECKOUT OPTIONS:
+  CallStackParser:
+    :commit: fd078454126853f2fe84981389bd4a359cafddfd
+    :git: https://github.com/gumob/CallStackParser.git
+
+SPEC CHECKSUMS:
+  CallStackParser: ae5a22aab60caeb3bb3f9725cf8d00ac368b507c
+
+PODFILE CHECKSUM: 681bb4284eba67d505aadf553ab45e64c4bcc863
+
+COCOAPODS: 1.5.3
