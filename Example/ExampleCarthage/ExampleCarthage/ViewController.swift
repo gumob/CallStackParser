@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import CallStackParser
 
 class ViewController: UIViewController {
 
@@ -14,7 +15,17 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
     }
-
+    
+    func foo() {
+        print()
+        print(Thread.simpleCallStackString)
+        bar()
+    }
+    
+    func bar() {
+        print()
+        print(Thread.simpleCallStackString)
+    }
 
 }
 

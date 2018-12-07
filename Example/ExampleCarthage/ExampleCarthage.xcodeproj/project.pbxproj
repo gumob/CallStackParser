@@ -12,6 +12,7 @@
 		A70142DC21BA5F42000EDF09 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A70142DA21BA5F42000EDF09 /* Main.storyboard */; };
 		A70142DE21BA5F43000EDF09 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A70142DD21BA5F43000EDF09 /* Assets.xcassets */; };
 		A70142E121BA5F43000EDF09 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A70142DF21BA5F43000EDF09 /* LaunchScreen.storyboard */; };
+		A701430A21BA6630000EDF09 /* CallStackParser.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A701430921BA6630000EDF09 /* CallStackParser.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		A70142DD21BA5F43000EDF09 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A70142E021BA5F43000EDF09 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A70142E221BA5F43000EDF09 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A701430921BA6630000EDF09 /* CallStackParser.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CallStackParser.framework; path = Carthage/Build/iOS/CallStackParser.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +31,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A701430A21BA6630000EDF09 /* CallStackParser.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +43,7 @@
 			children = (
 				A70142D521BA5F42000EDF09 /* ExampleCarthage */,
 				A70142D421BA5F42000EDF09 /* Products */,
+				A701430821BA6630000EDF09 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -64,6 +68,14 @@
 			path = ExampleCarthage;
 			sourceTree = "<group>";
 		};
+		A701430821BA6630000EDF09 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A701430921BA6630000EDF09 /* CallStackParser.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -74,6 +86,7 @@
 				A70142CF21BA5F42000EDF09 /* Sources */,
 				A70142D021BA5F42000EDF09 /* Frameworks */,
 				A70142D121BA5F42000EDF09 /* Resources */,
+				A701430721BA65D0000EDF09 /* Carthage */,
 			);
 			buildRules = (
 			);
@@ -129,6 +142,29 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		A701430721BA65D0000EDF09 /* Carthage */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/iOS/CallStackParser.framework",
+			);
+			name = Carthage;
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/CallStackParser.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/usr/local/bin/carthage copy-frameworks\n";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		A70142CF21BA5F42000EDF09 /* Sources */ = {
@@ -283,6 +319,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = ExampleCarthage/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -300,6 +340,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = ExampleCarthage/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
