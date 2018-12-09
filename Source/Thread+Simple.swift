@@ -26,8 +26,8 @@ public extension Thread {
                           let symbol: (String, String) = CallStackParser.classAndMethodForStackSymbol($0) else {
                         return ""
                     }
-                    let classStr: String = symbol.0.padding(toLength: 36, withPad: " ", startingAt: 0)
-                    return "\(classStr) \(symbol.1)"
+//                    let classStr: String = symbol.0.padding(toLength: 36, withPad: " ", startingAt: 0)
+                    return "\(symbol.0) \(symbol.1)"
                 }
                 .filter {
                     !$0.isEmpty
