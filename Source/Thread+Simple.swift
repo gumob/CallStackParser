@@ -22,12 +22,16 @@ public extension Thread {
                                                                        options: .regularExpression,
                                                                        range: nil)
                                                  .components(separatedBy: " ")[safe: 1],
-                          module.hasPrefix(bundleName),
-                          let symbol: (String, String) = CallStackParser.classAndMethodForStackSymbol($0) else {
+                          module.hasPrefix(bundleName) else {
                         return ""
                     }
-//                    let classStr: String = symbol.0.padding(toLength: 36, withPad: " ", startingAt: 0)
-                    return "\(symbol.0) \(symbol.1)"
+                    if let symbol: (String, String) = CallStackParser.classAndMethodForStackSymbol($0) {
+                        return "\(symbol.0) \(symbol.1)"
+                    }
+                    if let closure = CallStackParser.closureForStackSymbol($0) {
+                        return closure
+                    }
+                    return ""
                 }
                 .filter {
                     !$0.isEmpty
