@@ -58,7 +58,7 @@ public class CallStackParser {
                     range: nil
             )
             let packageComponent = String(packageClassAndMethodStr.split(separator: " ").first!)
-            var packageClassAndMethod = packageComponent.split(separator: ".")
+            let packageClassAndMethod = packageComponent.split(separator: ".")
             let numberOfComponents = packageClassAndMethod.count
             if (numberOfComponents >= 2) {
                 let method = CallStackParser.cleanMethod(method: String(packageClassAndMethod[numberOfComponents - 1]))
@@ -68,6 +68,27 @@ public class CallStackParser {
                     }
                 }
                 return (String(packageClassAndMethod[numberOfComponents - 2]), method)
+            }
+        }
+        return nil
+    }
+
+    public class func closureForStackSymbol(_ stackSymbol: String, includeImmediateParentClass: Bool? = false) -> String? {
+        let replaced: String = stackSymbol.replacingOccurrences(of: "\\s+", with: " ", options: .regularExpression, range: nil)
+        let components: [Substring] = replaced.split(separator: " ")
+        if (components.count >= 4) {
+            guard var packageClassAndMethodStr = try? parseMangledSwiftSymbol(String(components[3])).description else { return nil }
+            packageClassAndMethodStr = packageClassAndMethodStr.replacingOccurrences(
+                of: "\\s+",
+                with: " ",
+                options: .regularExpression,
+                range: nil
+            )
+            let packageComponent = String(packageClassAndMethodStr.split(separator: " ").first!)
+            let packageClassAndMethod = packageComponent.split(separator: ".")
+            let numberOfComponents = packageClassAndMethod.count
+            if numberOfComponents == 1 {
+                return packageClassAndMethodStr
             }
         }
         return nil

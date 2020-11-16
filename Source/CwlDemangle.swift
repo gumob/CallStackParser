@@ -1119,7 +1119,7 @@ fileprivate extension Demangler {
                 for c in text.unicodeScalars {
                     if word == nil, !c.isDigit && c != "_" && words.count < maxNumWords {
                         word = "\(c)"
-                    } else if var w = word {
+                    } else if let w = word {
                         if (c == "_") || (w.unicodeScalars.last?.isUpper == false && c.isUpper) {
                             if w.unicodeScalars.count >= 2 {
                                 words.append(w)
@@ -3078,7 +3078,7 @@ fileprivate func decodeSwiftPunycode(_ value: String) -> String {
     var pos = input.startIndex
 
     // Unlike RFC3492, Swift uses underscore for delimiting
-    if let ipos = input.index(of: "_" as UnicodeScalar) {
+    if let ipos = input.firstIndex(of: "_" as UnicodeScalar) {
         output.append(contentsOf: input[input.startIndex..<ipos].map { UnicodeScalar($0) })
         pos = input.index(ipos, offsetBy: 1)
     }
@@ -3707,7 +3707,7 @@ fileprivate struct SymbolPrinter {
             target.write(">")
         case .dependentGenericParamCount: return nil
         case .dependentGenericConformanceRequirement:
-            _ = printFirstChild(name)
+            printFirstChild(name)
             _ = printOptional(name.children.at(1), prefix: ": ")
         case .dependentGenericLayoutRequirement:
             guard let layout = name.children.at(1), let c = layout.text?.unicodeScalars.first else { return nil }
@@ -4190,27 +4190,27 @@ internal enum SwiftSymbolParseError: Error {
 /// NOTE: This extension is fileprivate to avoid clashing with CwlUtils (from which it is taken). If you want to use these functions outside this file, consider including CwlUtils.
 fileprivate extension UnicodeScalar {
     /// Tests if the scalar is within a range
-    fileprivate func isInRange(_ range: ClosedRange<UnicodeScalar>) -> Bool {
+    func isInRange(_ range: ClosedRange<UnicodeScalar>) -> Bool {
         return range.contains(self)
     }
 
     /// Tests if the scalar is a plain ASCII digit
-    fileprivate var isDigit: Bool {
+    var isDigit: Bool {
         return ("0"..."9").contains(self)
     }
 
     /// Tests if the scalar is a plain ASCII English alphabet lowercase letter
-    fileprivate var isLower: Bool {
+    var isLower: Bool {
         return ("a"..."z").contains(self)
     }
 
     /// Tests if the scalar is a plain ASCII English alphabet uppercase letter
-    fileprivate var isUpper: Bool {
+    var isUpper: Bool {
         return ("A"..."Z").contains(self)
     }
 
     /// Tests if the scalar is a plain ASCII English alphabet letter
-    fileprivate var isLetter: Bool {
+    var isLetter: Bool {
         return isLower || isUpper
     }
 }
